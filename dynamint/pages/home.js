@@ -10,13 +10,24 @@ import {
   Divider,
 } from "@mantine/core";
 
+import { WalletLinkConnector } from "@web3-react/walletlink-connector";
+import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
+
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import main from  "./main.js";
+import main from "./main.js";
 
 export default function Home() {
+  const { activate, deactivate } = useWeb3React();
+
+  const CoinbaseWallet = new WalletLinkConnector({
+    url: `https://mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
+    appName: "dynamint",
+    supportedChainIds: [1, 3, 4, 5, 42],
+  });
+
   return (
     <div className={styles.container}>
       <Head>
@@ -32,9 +43,16 @@ export default function Home() {
       <Container py={30}>
         <Group position="center" spacing="xl">
           <Title order={4}>Connect Wallet</Title>
-          <Link href="/cbw">
-            <Image height={30} width={30} src="/coinbase-wallet.png"></Image>
-          </Link>
+          {/* <Link href="/cbw"> */}
+          <Image
+            onClick={() => {
+              activate(CoinbaseWallet);
+            }}
+            height={30}
+            width={30}
+            src="/coinbase-wallet.png"
+          ></Image>
+          {/* </Link> */}
           <Link href="https://wallet.testnet.near.org/profile">
             <Image height={30} width={30} src="/near-wallet.jpeg"></Image>
           </Link>
