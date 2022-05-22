@@ -53,13 +53,7 @@ export default function Home() {
       </Head>
 
       <Header height={60} p="md">
-        <Image
-          height={39}
-          width={244.5}
-          src="/logo-dynamint-white.png"
-          alt="With default placeholder"
-          withplaceholder
-        />
+        <Image height={39} width={244.5} src="/logo-dynamint-white.png" />
       </Header>
 
       <Container py={10}>
