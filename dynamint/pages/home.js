@@ -14,6 +14,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import main from  "./main.js";
 
 export default function Home() {
   return (
@@ -32,9 +33,9 @@ export default function Home() {
         <Group position="center" spacing="xl">
           <Title order={4}>Connect Wallet</Title>
           <Link href="/cbw">
-            <Image height={24} width={24} src="/coinbase-wallet.png"></Image>
+            <Image height={30} width={30} src="/coinbase-wallet.png"></Image>
           </Link>
-          <Link href="/nw">
+          <Link href="https://wallet.testnet.near.org/profile">
             <Image height={30} width={30} src="/near-wallet.jpeg"></Image>
           </Link>
         </Group>
