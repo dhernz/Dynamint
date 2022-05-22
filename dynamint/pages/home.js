@@ -34,21 +34,19 @@ export default function Home() {
 
      
 
-      <Container py={100}>
-        <Title  order={1} align="center">
-          $500
+      <Container py={100} align="center">
+      <label for="input-money"  >Amount:</label>
+        <Title  order={2} align="center">
+         <input type="text" id="input-money" name="input-money" /> 
         </Title>
 
-        <Container align="center" py={5}>
+        <Container align="center" py={15}>
         <Link href="https://staging-global.transak.com/?apiKey=dcdb1074-98e2-40d7-a5d4-9983774ba3c3&cryptoCurrencyList=USDC,NEAR,SOL">
           <Button variant="outline" >Add Funds</Button>
         </Link>
   
       </Container>
       </Container>
-
-
-    
 
 
       <Container py={20}>
