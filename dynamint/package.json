@@ -10,15 +10,29 @@
   },
   "dependencies": {
     "@mantine/core": "^4.2.5",
+    "@mantine/form": "^4.2.6",
     "@mantine/hooks": "^4.2.5",
     "@mantine/next": "^4.2.5",
+    "auto-install": "^1.7.4",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "skynet-js": "^4.1.0"
+    "skynet-js": "^4.1.0",
+    "typescript": "^4.6.4",
+    "@certusone/wormhole-sdk": "^0.3.4",
+    "@improbable-eng/grpc-web-node-http-transport": "^0.15.0",
+    "algosdk": "^1.15.0",
+    "b58": "^4.0.3",
+    "ethers": "^5.6.4",
+    "ts-node": "^10.8.0"
   },
   "devDependencies": {
     "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "@types/bs58": "^4.0.1",
+    "@types/crypto-js": "^4.1.1",
+    "crypto-js": "^4.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.6.4"
   }
 }

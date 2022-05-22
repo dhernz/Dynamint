@@ -21,7 +21,7 @@ export default function Home() {
       <Head>
         <title>Dynamint</title>
         <meta name="description" content="multi-chain venmo for crypto" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-dynamint.png" />
       </Head>
 
       <Header height={60} p="md">
