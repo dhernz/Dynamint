@@ -10,6 +10,7 @@ import {
 
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -25,9 +26,9 @@ export default function Home() {
         <Image
           height={39}
           width={244.5}
-          src="/logo-dynamint.png"
+          src="/logo-dynamint-white.png"
           alt="With default placeholder"
-          withPlaceholder
+          withplaceholder
         />
       </Header>
 
@@ -39,7 +40,10 @@ export default function Home() {
 
       <Container py={20}>
         <Group position="center" grow>
-          <Button variant="outline">Pay</Button>
+          <Link href="/pay">
+            <Button variant="outline">Pay</Button>
+          </Link>
+
           <Button variant="outline">Request</Button>
         </Group>
       </Container>
