@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Dynamint</title>
-        <meta name="description" content="multi-chain venmo for crypto" />
+        <meta name="description" content="Easily send crosschain crypto" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
